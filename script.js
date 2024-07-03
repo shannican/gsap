@@ -8,15 +8,6 @@ tl.from("#nav h2,#nav h3",{
   stagger:0.2
 })
 
-tl.from("#left",{
-  width:0,
-  duration:1
-},"anim")
-
-tl.to("#right",{
-  width:"45%",
-  duration:1
-},"anim")
 
 tl.from("#left h1",{
   x:-400,
@@ -27,4 +18,9 @@ tl.from("#left h1",{
 tl.from("#left button",{
   opacity:0,
   duration:0.6
+})
+
+tl.from("#right",{
+  opacity:0,
+  duration:0.5
 })
