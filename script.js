@@ -1,26 +1,21 @@
 var tl = gsap.timeline()
 
-tl.from("#nav h2,#nav h3",{
-  y:-50,
-  duration:1,
-  delay:0.5,
+tl.to("#full",{
+  transform:"translateY(0)",
+  duration:0.6,
+  ease:"power1.out"
+})
+tl.from("#full h2",{
+  x:-80,
   opacity:0,
   stagger:0.2
 })
 
+tl.pause()
 
-tl.from("#left h1",{
-  x:-400,
-  opacity:0,
-  duration:0.8
+document.querySelector("#menu").addEventListener("click",function(){
+  tl.play()
 })
-
-tl.from("#left button",{
-  opacity:0,
-  duration:0.6
-})
-
-tl.from("#right",{
-  opacity:0,
-  duration:0.5
+document.querySelector(".close").addEventListener("click",function(){
+  tl.reverse()
 })
