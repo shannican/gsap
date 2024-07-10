@@ -3,51 +3,61 @@
     padding:0;
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 html, body {
     height:100%;
     width:100%;
 }
-
-#main{
+#page1{
     height: 100%;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: 50% 60%;
-}
-
-#full{
-    width: 100%;
-    transform: translateY(-100%);
-    background-color: rgba(0, 0, 0, 0.24);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    position: absolute;
-
-}
-
-#full h2{
-    margin-bottom: 10px;
-    font-size: 50px;
-    color: #fff;
-    font-weight: 300;
-}
-
-#nav{
+    background-color: lightblue;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 50px;
-    color: #fff;
-    font-size: 30px;
+    justify-content: center;
 }
-#full h4{
-    position: absolute;
-    right: 5%;
-    top: 10%;
-    font-size: 40px;
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(105, 214, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    padding: 30px 40px;
+    
+}
+.card h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 159, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page1 h1{
+    font-size: 100px;
     color: #fff;
+
 }

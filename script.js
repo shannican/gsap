@@ -1,21 +1,20 @@
-var tl = gsap.timeline()
-
-tl.to("#full",{
-  transform:"translateY(0)",
-  duration:0.6,
-  ease:"power1.out"
-})
-tl.from("#full h2",{
-  x:-80,
+gsap.from("#page1 h1 span",{
   opacity:0,
-  stagger:0.2
+  stagger:-0.2,
+  delay:1
 })
 
-tl.pause()
-
-document.querySelector("#menu").addEventListener("click",function(){
-  tl.play()
-})
-document.querySelector(".close").addEventListener("click",function(){
-  tl.reverse()
+gsap.from(".card",{
+  y:100,
+  opacity:0,
+  duration:1,
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".card",
+    scroller:"body",
+    markers:true,
+    start:"top 60%",
+    end:"top 40%",
+    scrub:2
+  }
 })
