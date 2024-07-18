@@ -12,24 +12,61 @@ html, body {
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: lightblue;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-#page2{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(113, 208, 239);
-}
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(7, 189, 249);
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #eee;
+    position: relative;
 }
 
-#box{
-    height: 200px;
-    width: 200px;
-    background-color: crimson;
+#page1:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1611689342806-0863700ce1e4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#page1:nth-child(3){
+    background-color: rgb(19, 151, 195);
+}
+#left{
+    height: 100%;
+    width: 45%;
+    padding: 50px 0;
+}
+#right{
+    height: 100%;
+    width: 45%;
+    background-color: red;
+    overflow: hidden;
+}
+#left h1{
+    font-size: 90px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 90px;
+}
+#left p{
+    font-size: 18px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none ;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.4;
 }
